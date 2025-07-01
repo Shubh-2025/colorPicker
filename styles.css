@@ -79,7 +79,7 @@ button{
         font-size: medium;
     }
     .screen, .screen1, .screen2, .screen3, .screen4 {
-        width: 90vw;
+        width: 500vw;
         max-width: 95vw;
         height: 40vw;
         max-height: 60vw;
@@ -89,6 +89,8 @@ button{
         height: auto;
         font-size: 0.9rem;
         padding: 15px 5px;
+        position:fixed;
+        bottom: 0;
     }
     .left, .right {
         height: auto;
