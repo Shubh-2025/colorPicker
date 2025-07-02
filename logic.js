@@ -1,21 +1,36 @@
 let screen = document.getElementsByClassName('screen');
 let button = document.querySelector('#change');
+let full =document.querySelector(".F");
 
+full.addEventListener("click", () => {
+    screen[2].requestFullscreen(); 
+});
+
+document.addEventListener("fullscreenchange",()=>{
+      if (!document.fullscreenElement) {
+        console.log("Exited fullscreen");
+        full.style.display = "flex"; // show the button again
+    } else {
+        console.log("Entered fullscreen");
+        full.style.display = "none"; // hide the button while in fullscreen
+    }
+})
 
 function getRandomHexColor() {
     return '#' + Math.floor(Math.random()*16777215).toString(16);
-};
+}
+
 function setRandomColor() {
         screen[0].style.backgroundColor = color = getRandomHexColor();
-        screen[0].textContent = color;
+        screen[0].firstElementChild.textContent=color;
         screen[1].style.backgroundColor = color =getRandomHexColor();
-        screen[1].textContent = color;
+        screen[1].firstElementChild.textContent = color;
         screen[2].style.backgroundColor = color =getRandomHexColor();
-        screen[2].textContent = color;
+        screen[2].firstElementChild.textContent = color;
         screen[3].style.backgroundColor = color =getRandomHexColor();
-        screen[3].textContent = color;
+        screen[3].firstElementChild.textContent = color;
         screen[4].style.backgroundColor = color =getRandomHexColor();
-        screen[4].textContent = color;
+        screen[4].firstElementChild.textContent = color;
 };
 
 button.addEventListener("click",setRandomColor);

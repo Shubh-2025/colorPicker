@@ -15,7 +15,20 @@ body{
     background-position:center;
     background-size: cover;
 }
-
+.F{
+    height:30px;
+    width:30px;
+    z-index: 1;
+    display: flex;
+    background-image:url("./asset/png-transparent-computer-icons-icon-design-symbol-full-screen-thumbnail.png");
+    position:relative;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    left:90px;
+    top:75px;
+    border-radius: 10px;
+}
 #footer{
     position: absolute;
     bottom: 0PX;
@@ -42,7 +55,7 @@ button{
 }
 .container{
     padding: 10px;
-    height: 40vh;
+    height: 50vh;
     width: 20vw;
     border:2px solid black;
     font-size: larger;
@@ -66,42 +79,8 @@ button{
     border-radius: 20px;
     background-color:rgba(0, 0, 0, 0.427);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: aliceblue;
-}
-
-@media (max-width: 600px) {
-    .container {
-        width: 90vw;
-        height: auto;
-        padding: 5vw;
-        font-size: medium;
-    }
-    .screen, .screen1, .screen2, .screen3, .screen4 {
-        width: 500vw;
-        max-width: 95vw;
-        height: 40vw;
-        max-height: 60vw;
-        font-size: 1rem;
-    }
-    #footer {
-        height: auto;
-        font-size: 0.9rem;
-        padding: 15px 5px;
-        position:fixed;
-        bottom: 0;
-    }
-    .left, .right {
-        height: auto;
-    }
-    button {
-        height: 36px;
-        font-size: 1rem;
-    }
-    body {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
 }
