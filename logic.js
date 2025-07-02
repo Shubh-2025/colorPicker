@@ -1,9 +1,14 @@
 let screen = document.getElementsByClassName('screen');
 let button = document.querySelector('#change');
 let full =document.querySelector(".F");
+let picker = document.getElementById('pick');
 
 full.addEventListener("click", () => {
     screen[2].requestFullscreen(); 
+});
+
+picker.addEventListener("input",(pick)=>{
+    screen[2].style.backgroundColor=pick.target.value;
 });
 
 document.addEventListener("fullscreenchange",()=>{

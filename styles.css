@@ -15,18 +15,32 @@ body{
     background-position:center;
     background-size: cover;
 }
+#pick{
+/* appearance: none; */
+width: 35px;
+height: 35px;
+margin: 5px;;
+border-radius: 50%;
+border: 2px solid #b3d1ff;
+cursor: pointer;
+transition: border 0.2s;
+&::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+}
+}
 .F{
-    height:30px;
-    width:30px;
+    height: 35px;
+    width:35px;
     z-index: 1;
     display: flex;
-    background-image:url("./asset/png-transparent-computer-icons-icon-design-symbol-full-screen-thumbnail.png");
+    background-image:url("./asset/FullScreenImage.png");
     position:relative;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
-    left:90px;
-    top:75px;
+    left:80px;
+    top:70px;
     border-radius: 10px;
 }
 #footer{
@@ -43,14 +57,15 @@ body{
     text-align: center;
 }
 button{
-    border-radius: 50%;
+    border-radius: 10px;
     height: 40px;
+    padding: 5px;
     font-size: large;
     align-items: center;
     font-weight: 800;
     color: white;
     background: transparent;
-    border: none;
+    border: 2px solid #b3d1ff;
     cursor: pointer;
 }
 .container{
