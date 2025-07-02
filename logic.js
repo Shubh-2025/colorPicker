@@ -8,7 +8,7 @@ full.addEventListener("click", () => {
 });
 
 picker.addEventListener("input",(pick)=>{
-    screen[2].style.backgroundColor=screen[2].textContent=pick.target.value;
+    screen[2].style.backgroundColor=screen[2].firstElementChild.textContent=pick.target.value;
 
 });
 
